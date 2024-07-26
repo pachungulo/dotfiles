@@ -13,4 +13,5 @@ config.initial_cols = 125
 config.window_decorations = "RESIZE"
 config.hide_tab_bar_if_only_one_tab = true
 config.native_macos_fullscreen_mode = true
+config.cursor_blink_rate = 0
 return config
