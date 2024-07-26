@@ -1,3 +1,6 @@
-{{ if ne .chezmoi.os "darwin" }}
+{{- if ne .chezmoi.os "darwin" }}
 .wallpaper
-{{ end }}
+{{- end -}}
+{{- if not (lookPath "wezterm") }}
+.wezterm.lua
+{{- end -}}
