@@ -1,0 +1,17 @@
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[user]
+	name = pachungulo
+	email = 115584328+pachungulo@users.noreply.github.com
+[pull]
+	ff = only
+[push]
+	default = simple
+	autoSetupRemote = true
+[init]
+	defaultBranch = main
+[branch]
+	sort = -committerdate
