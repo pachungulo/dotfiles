@@ -2,7 +2,7 @@ local wezterm = require("wezterm")
 local config = wezterm.config_builder()
 config.color_scheme = "Catppuccin Mocha"
 config.front_end = "WebGpu"
-config.default_prog = { "/opt/homebrew/bin/fish", "-l", "-i" }
+config.default_prog = { "/opt/homebrew/bin/fish", "-l" }
 config.font = wezterm.font("FiraCode Nerd Font")
 config.harfbuzz_features = {
 	"ss05",
