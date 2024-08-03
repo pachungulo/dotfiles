@@ -1,0 +1,18 @@
+{{- if eq .chezmoi.os "darwin" -}}
+{{- if not (lookPath "brew") -}}
+Homebrew
+
+{{- end -}}
+{{- end -}}
+{{- if not (lookPath "rg") -}}
+ripgrep
+
+{{- end -}}
+{{- if not (lookPath "nvim") -}}
+neovim
+
+{{- end -}}
+{{- if not (lookPath "fish") -}}
+fish
+
+{{- end -}}
