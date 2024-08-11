@@ -1,6 +1,6 @@
 -- set this to true to enable the retro style tab bar and display workspace and stuff.
 -- Try it! it's not for me, but I wanna leave it in here in case I change my mind.
-local extrastuff = false
+local extrastuff = true
 
 local wezterm = require("wezterm")
 local config = wezterm.config_builder()
