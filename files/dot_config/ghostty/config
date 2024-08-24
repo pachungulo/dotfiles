@@ -1,0 +1,10 @@
+theme = catppuccin-mocha
+font-family = "FiraCode Nerd Font"
+font-feature = ss03
+font-feature = ss05
+background-opacity = 0.8
+background-blur-radius = 20
+command = /opt/homebrew/bin/fish
+window-height = 40
+window-width = 125
+
