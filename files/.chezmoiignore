@@ -1,13 +1,13 @@
-{{- if ne .chezmoi.os "darwin" -}}
+{{  if ne .chezmoi.os "darwin"  }}
 .config/fish/conf.d/brew.fish
-{{- end -}}
+{{  end  }}
 
-{{- if not (lookPath "wezterm") -}}
+{{  if not (lookPath "wezterm")  }}
 .config/wezterm/
-{{- end -}}
-{{- if not (lookPath "ghostty") -}}
+{{  end  }}
+{{  if not (lookPath "ghostty")  }}
 .config/ghostty/
-{{- end -}}
+{{  end  }}
 
 # always ignored goes here
 .config/fish/fish_variables
