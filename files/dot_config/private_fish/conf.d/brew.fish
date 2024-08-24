@@ -1,3 +1,1 @@
-{{- if eq .chezmoi.os "darwin" -}}
 eval "$(/opt/homebrew/bin/brew shellenv fish)"
-{{- end -}}

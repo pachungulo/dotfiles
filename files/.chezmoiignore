@@ -1,7 +1,3 @@
-{{- if eq .chezmoi.os "android" -}}
-*
-!.config/fish
-{{- end -}}
 {{- if not (lookPath "wezterm") -}}
 .config/wezterm/
 {{- end -}}
