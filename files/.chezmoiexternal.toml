@@ -1,6 +1,8 @@
+{{- if ne .chezmoi.os "android" -}}
 [".config/nvim/"]
   type = "git-repo"
   url = "git@github.com:pachungulo/nvim-config.git"
   refreshPeriod = "24h"
   [".config/nvim/".pull]
     args = ["--ff-only"]
+{{- end -}}
