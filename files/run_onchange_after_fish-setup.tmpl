@@ -3,8 +3,7 @@
 set -l temp_fisher_path {{ .chezmoi.homeDir -}}/.config/fish/fisher/functions/fisher.fish
 fish_config theme save catppuccin
 if not test -f $temp_fisher_path
-  curl -sL https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fisher.fish | source && fisher install jorgebucaran/fisher
+  curl -sL https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fisher.fish | source && fisher update
 end
-fisher update
 tide configure --auto --style=Lean --prompt_colors='16 colors' --show_time=No --lean_prompt_height='Two lines' --prompt_connection=Dotted --prompt_spacing=Compact --icons='Few icons' --transient=Yes
 {{ end }}
