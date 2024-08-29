@@ -5,5 +5,8 @@ fish_config theme save catppuccin
 if not test -f $temp_fisher_path
   curl -sL https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fisher.fish | source && fisher update
 end
+echo Proceeding may clear the terminal. Please take note of any logged errors before proceeding.
+echo Press enter to continue...
+read
 tide configure --auto --style=Lean --prompt_colors='16 colors' --show_time=No --lean_prompt_height='Two lines' --prompt_connection=Dotted --prompt_spacing=Compact --icons='Few icons' --transient=Yes
 {{ end }}
