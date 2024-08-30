@@ -15,4 +15,4 @@ As always, never run another person's dotfiles setup blindly unless you're eithe
 ## Neovim
 
 I use `.chezmoiexternal` to keep my neovim config in a seperate repository. I just prefer to keep them seperate.
-[Here](https://github.com/twpayne/chezmoi) is my config.
+[Here](https://github.com/pachungulo/nvim-config) is my config.
