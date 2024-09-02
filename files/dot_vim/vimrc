@@ -1,0 +1,36 @@
+" Use spaces instead of tabs
+set expandtab
+set tabstop=2
+set softtabstop=2
+set shiftwidth=2
+set smartindent
+
+" Language specific settings
+let g:python_recommended_style = 0
+
+" General settings
+set relativenumber
+set number
+set mouse=a
+set showmode
+set breakindent
+set updatetime=250
+set timeoutlen=300
+set splitright
+set splitbelow
+set list
+set listchars=tab:\»\ ,trail:·,nbsp:␣
+set cursorline
+set cursorlineopt=number 
+
+" Search settings
+set ignorecase
+set smartcase
+
+" Scrolling
+set scrolloff=10
+set hlsearch
+
+" Colorscheme
+set termguicolors
+colorscheme catppuccin_mocha
