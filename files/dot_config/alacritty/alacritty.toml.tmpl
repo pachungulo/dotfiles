@@ -8,7 +8,7 @@ import = [
 
 [shell]
 args = ["-l", "-i"]
-program = "/opt/homebrew/bin/fish"
+program = {{ .fishPath | quote }}
 
 [font]
 size = 12.0
