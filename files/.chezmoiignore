@@ -8,6 +8,9 @@
 {{  if not (lookPath "ghostty") -}}
 .config/ghostty/
 {{  end -}}
+{{  if not (lookPath "alacritty") -}}
+.config/alacritty/
+{{  end -}}
 {{ if and (not (lookPath "yazi")) (not (stat "/opt/homebrew/bin/yazi")) -}}
 .config/yazi
 {{  end -}}
