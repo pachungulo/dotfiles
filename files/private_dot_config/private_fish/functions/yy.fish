@@ -1,7 +1,7 @@
 function yy
   if not command -q yazi
     echo 'Error: yazi not installed'
-    exit 1
+    return 1
   end
   set tmp (mktemp -t "yazi-cwd.XXXXXX")
   yazi $argv --cwd-file="$tmp"
