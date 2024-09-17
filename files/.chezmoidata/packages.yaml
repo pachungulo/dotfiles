@@ -8,5 +8,6 @@ packages:
     - 'neovim'
     - 'lazygit'
     - 'tlrc'
+    - 'eza'
     casks:
     # - 'something'
