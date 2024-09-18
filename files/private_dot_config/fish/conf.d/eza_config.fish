@@ -1,6 +1,6 @@
 if command -q eza
-  alias ls="eza --group-directories-first --icons=auto"
-  alias la="eza -al --group-directories-first --icons=auto"
-  alias ll="eza -l --group-directories-first --icons=auto"
-  alias lt="eza -TL 2 --group-directories-first --icons=auto"
+  abbr -a ls eza
+  abbr -a la eza -al
+  abbr -a ll eza -l
+  abbr -a lt eza -TL 2
 end
