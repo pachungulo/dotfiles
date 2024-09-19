@@ -7,9 +7,6 @@
 {{  if not (lookPath "alacritty") -}}
 .config/alacritty/
 {{  end -}}
-{{ if and (not (lookPath "yazi")) (not (stat "/opt/homebrew/bin/yazi")) -}}
-.config/yazi
-{{  end -}}
 # always ignored goes here
 .config/fish/fish_variables
 .config/fish/fisher/**
