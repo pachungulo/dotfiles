@@ -4,7 +4,11 @@ font-feature = ss03
 font-feature = ss05
 background-opacity = 0.8
 background-blur-radius = 20
-command = {{ .fishPath }}
+{{ if eq .chezmoi.os "darwin" -}}
+window-height = 53
+window-width = 183
+{{ else -}}
 window-height = 40
 window-width = 125
+{{ end -}}
 

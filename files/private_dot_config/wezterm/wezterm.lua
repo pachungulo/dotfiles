@@ -30,7 +30,6 @@ config.inactive_pane_hsb = {
 
 config.color_scheme = "Catppuccin Mocha"
 config.front_end = "WebGpu"
-config.default_prog = { {{ .fishPath | quote }}, "-l" }
 config.font = wezterm.font("FiraCode Nerd Font")
 config.harfbuzz_features = {
   "ss05",
