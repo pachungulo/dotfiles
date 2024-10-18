@@ -3,4 +3,11 @@ if [ "$(uname)" = "Darwin" ] && [ -f /opt/homebrew/bin/brew ]; then
   export BASH_SILENCE_DEPRECATION_WARNING=1
 fi
 
+if command -v nvim >/dev/null 2>&1; then
+  EDITOR=nvim
+else
+  EDITOR=vim
+fi
+export EDITOR
+
 . ~/.bashrc
