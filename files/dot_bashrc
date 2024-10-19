@@ -105,7 +105,7 @@ if ${use_color} ; then
 	fi
 
 	#BSD#@export CLICOLOR=1
-	#GNU#@alias ls='ls --color=auto'
+	alias ls='ls --color=auto'
 	alias grep='grep --colour=auto'
 else
 	# show root@ when we don't have colors
