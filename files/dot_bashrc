@@ -15,9 +15,9 @@ fi
 
 if type -P fish >/dev/null 2>&1 && [[ -z ${BASH_EXECUTION_STRING} && ${FISH_USED} != 1 ]]
 then
-	shopt -q login_shell && LOGIN_OPTION='--login' || LOGIN_OPTION=''
+	# shopt -q login_shell && LOGIN_OPTION='--login' || LOGIN_OPTION=''
   export FISH_USED=1
-	exec fish $LOGIN_OPTION
+	exec fish # $LOGIN_OPTION
 fi
 
 # Ghostty integration stuff because the whole shell switching business broke it.
