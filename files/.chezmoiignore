@@ -7,6 +7,15 @@
 {{  if not (lookPath "alacritty") -}}
 .config/alacritty/
 {{  end -}}
+
+# MacOS only packages
+
+{{ if ne .chezmoi.os "darwin" -}}
+{{ range .os_specific.darwin -}}
+{{ . }}
+{{ end -}}
+{{ end -}}
+
 # always ignored goes here
 .config/fish/fish_variables
 .config/fish/fisher/**

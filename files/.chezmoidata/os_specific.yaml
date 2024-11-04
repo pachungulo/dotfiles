@@ -1,0 +1,4 @@
+os_specific:
+  darwin:
+    - '.config/aerospace'
+    - '.config/karabiner'
