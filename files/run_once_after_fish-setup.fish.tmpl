@@ -5,6 +5,7 @@ fish_config theme save catppuccin
 if not test -f $temp_fisher_path
   curl -sL https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fisher.fish | source && fisher update
 end
+fish_hybrid_key_bindings
 echo Proceeding may clear the terminal. Please take note of any logged errors before proceeding.
 echo Press enter to continue...
 read
