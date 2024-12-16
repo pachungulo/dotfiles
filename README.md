@@ -16,3 +16,7 @@ As always, never run another person's dotfiles setup blindly unless you're eithe
 
 I use `.chezmoiexternal` to keep my neovim config in a seperate repository. I just prefer to keep them seperate.
 [Here](https://github.com/pachungulo/nvim-config) is my config.
+
+## SurfingKeys
+
+One of my favorite extensions right now! My config is in the repo under `miscFiles`, and to use it you can just set the url in advanced mode to `https://raw.githubusercontent.com/pachungulo/dotfiles/refs/heads/main/miscFiles/SurfingKeys.js`
