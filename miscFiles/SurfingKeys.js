@@ -58,7 +58,6 @@ api.mapkey('p', "Open the clipboard's URL in the current tab", function() {
     });
 });
 api.map('P', 'cc');
-api.map('gi', 'i');
 api.map('F', 'gf');
 // api.map('gf', 'w'); // New mapping actually better lol
 api.map('`', '\'');
