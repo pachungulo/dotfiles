@@ -1,16 +1,17 @@
 theme = catppuccin-mocha
-background-opacity = 0.8
-background-blur-radius = 20
 {{ if eq .chezmoi.os "darwin" -}}
 font-family = "BerkeleyMono Nerd Font"
 window-height = 54
 window-width = 183
+background-opacity = 0.8
+background-blur-radius = 20
 {{ else -}}
 font-family = "FiraCode Nerd Font"
 font-feature = ss03
 font-feature = ss05
 window-height = 40
 window-width = 125
+background-opacity = 0.98
 {{ end -}}
 
 keybind = ctrl+s>equal=equalize_splits
