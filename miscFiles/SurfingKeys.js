@@ -100,7 +100,7 @@ api.addSearchAlias('B', 'bravesearch', 'https://search.brave.com/search?q=', 's'
     return JSON.parse(response.text)[1];
 });
 
-settings.defaultSearchEngine = "b"
+settings.defaultSearchEngine = "g"
 
 
 
