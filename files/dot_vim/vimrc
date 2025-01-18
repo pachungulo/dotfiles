@@ -1,3 +1,7 @@
+" set leader key
+
+let mapleader = " "
+let maplocalleader = " "
 " Use spaces instead of tabs
 set expandtab
 set tabstop=2
@@ -15,7 +19,6 @@ set mouse=a
 set showmode
 set breakindent
 set updatetime=250
-set timeoutlen=300
 set splitright
 set splitbelow
 set list
@@ -30,7 +33,11 @@ set smartcase
 " Scrolling
 set scrolloff=10
 set hlsearch
+set incsearch
 
 " Colorscheme
 set termguicolors
 colorscheme catppuccin_mocha
+
+" Mappings
+map Q @q
