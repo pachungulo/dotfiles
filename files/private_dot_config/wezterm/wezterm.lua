@@ -10,7 +10,7 @@ config.cursor_blink_ease_in = "Constant"
 config.cursor_blink_ease_out = "Constant"
 config.default_cursor_style = "BlinkingBar"
 config.window_padding = { left = 0, right = 0, top = 0, bottom = 0 }
-config.command_palette_font_size = 13
+config.command_palette_font_size = 14
 config.command_palette_bg_color = "#313244"
 config.command_palette_fg_color = "#b4befe"
 config.window_background_opacity = 0.8
@@ -30,11 +30,8 @@ config.inactive_pane_hsb = {
 
 config.color_scheme = "Catppuccin Mocha"
 config.front_end = "WebGpu"
-config.font = wezterm.font("FiraCode Nerd Font")
-config.harfbuzz_features = {
-  "ss05",
-  "ss03",
-}
+config.font = wezterm.font("CommitMonoPreconf")
+config.font_size = 14
 config.initial_rows = 40
 config.initial_cols = 125
 config.window_decorations = "RESIZE"

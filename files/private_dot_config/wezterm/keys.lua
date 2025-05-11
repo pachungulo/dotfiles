@@ -5,7 +5,7 @@ local act = wezterm.action
 
 function M.setup(config)
   -- config.disable_default_key_bindings = true
-  config.leader = { key = "phys:Space", mods = "CTRL", timeout_milliseconds = 1500 }
+  config.leader = { key = "s", mods = "CTRL", timeout_milliseconds = 1500 }
   config.keys = {
     -- Send C-a when pressing C-a twice
     { key = "a",          mods = "LEADER|CTRL", action = act.SendKey { key = "a", mods = "CTRL" } },

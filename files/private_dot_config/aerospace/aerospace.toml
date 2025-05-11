@@ -136,7 +136,7 @@ alt-shift-tab = 'move-workspace-to-monitor --wrap-around next'
 alt-shift-semicolon = 'mode service'
 
 # i3-like goodies
-alt-enter = 'exec-and-forget open -a /Applications/Ghostty.app'
+alt-enter = 'exec-and-forget open -a /Applications/WezTerm.app'
 
 alt-f = 'fullscreen'
 
