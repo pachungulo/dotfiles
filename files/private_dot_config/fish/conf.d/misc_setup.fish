@@ -9,3 +9,9 @@ end
 if set -q LS_COLORS
     set -e LS_COLORS
 end
+
+if type -q nvim
+    set -gx EDITOR nvim
+else
+    set -gx EDITOR vim
+end

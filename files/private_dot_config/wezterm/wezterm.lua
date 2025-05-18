@@ -39,6 +39,12 @@ config.hide_tab_bar_if_only_one_tab = true
 config.native_macos_fullscreen_mode = true
 -- config.cursor_blink_rate = 0
 
+if wezterm.target_triple == "aarch64-apple-darwin" then
+    config.default_prog = { "/opt/homebrew/bin/fish/", "-l" }
+else
+    config.default_prog = { "fish" }
+end
+
 -- Extra stuff from https://github.com/theopn/dotfiles/blob/ea71900c0d70885c87b30ef056795316f6d3abae/wezterm/wezterm.lua#L27.
 if extrastuff then
   config.hide_tab_bar_if_only_one_tab = false
