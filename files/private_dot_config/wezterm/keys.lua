@@ -8,7 +8,7 @@ function M.setup(config)
   config.leader = { key = "s", mods = "CTRL", timeout_milliseconds = 1500 }
   config.keys = {
     -- Send C-a when pressing C-a twice
-    { key = "a",          mods = "LEADER|CTRL", action = act.SendKey { key = "a", mods = "CTRL" } },
+    { key = "s",          mods = "LEADER|CTRL", action = act.SendKey { key = "s", mods = "CTRL" } },
     { key = "c",          mods = "LEADER",      action = act.ActivateCopyMode },
     { key = "phys:Space", mods = "LEADER",      action = act.ActivateCommandPalette },
 
