@@ -30,7 +30,9 @@ config.inactive_pane_hsb = {
 
 config.color_scheme = "Catppuccin Mocha"
 config.front_end = "WebGpu"
-config.font = wezterm.font("CommitMonoPreconf")
+config.font_dirs = { wezterm.home_dir .. "/.local/share/chezmoi/miscFiles/fonts" }
+config.font = wezterm.font_with_fallback{ "CommitMonoPreconf" }
+config.warn_about_missing_glyphs = false
 config.font_size = 14
 config.initial_rows = 40
 config.initial_cols = 125
