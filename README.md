@@ -14,5 +14,14 @@ As always, never run another person's dotfiles setup blindly unless you're eithe
 
 ## Neovim
 
-I use `.chezmoiexternal` to keep my neovim config in a seperate repository. I just prefer to keep them seperate.
+I prefer to keep my neovim config in a seperate repository, as I'm trying to make these dotfiles more minimal. 
 [Here](https://github.com/pachungulo/nvim-config) is my config.
+
+
+## Recommended installed software
+
+These should be installed through a package manager ideally:
+    - ripgrep for Neovim
+    - Some TLDR client
+    - A nice terminal
+    - fish shell
