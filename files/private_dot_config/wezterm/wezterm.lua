@@ -12,7 +12,7 @@ config.default_cursor_style = "BlinkingBar"
 config.window_padding = { left = 0, right = 0, top = 0, bottom = 0 }
 config.command_palette_font_size = 14
 config.command_palette_bg_color = "#313244"
-config.command_palette_fg_color = "#b4befe"
+config.command_palette_fg_color = "#bac2de"
 config.window_background_opacity = 0.8
 config.macos_window_background_blur = 20
 
@@ -39,12 +39,13 @@ config.initial_cols = 125
 config.window_decorations = "RESIZE"
 config.hide_tab_bar_if_only_one_tab = true
 config.native_macos_fullscreen_mode = true
--- config.cursor_blink_rate = 0
+config.cursor_blink_rate = 30
 
 if wezterm.target_triple == "aarch64-apple-darwin" then
     config.default_prog = { "/opt/homebrew/bin/fish/", "-l" }
 else
     config.default_prog = { "fish" }
+    config.max_fps = 120
 end
 
 -- Extra stuff from https://github.com/theopn/dotfiles/blob/ea71900c0d70885c87b30ef056795316f6d3abae/wezterm/wezterm.lua#L27.

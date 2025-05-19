@@ -9,12 +9,12 @@ function M.setup(config)
   config.keys = {
     -- Send C-a when pressing C-a twice
     { key = "s",          mods = "LEADER|CTRL", action = act.SendKey { key = "s", mods = "CTRL" } },
-    { key = "c",          mods = "LEADER",      action = act.ActivateCopyMode },
+    { key = "c",          mods = "LEADER|SHIFT",      action = act.ActivateCopyMode },
     { key = "phys:Space", mods = "LEADER",      action = act.ActivateCommandPalette },
 
     -- Pane keybindings
-    { key = "s",          mods = "LEADER",      action = act.SplitVertical { domain = "CurrentPaneDomain" } },
-    { key = "v",          mods = "LEADER",      action = act.SplitHorizontal { domain = "CurrentPaneDomain" } },
+    { key = "-",          mods = "LEADER",      action = act.SplitVertical { domain = "CurrentPaneDomain" } },
+    { key = "\\",          mods = "LEADER",      action = act.SplitHorizontal { domain = "CurrentPaneDomain" } },
     { key = "h",          mods = "LEADER",      action = act.ActivatePaneDirection("Left") },
     { key = "j",          mods = "LEADER",      action = act.ActivatePaneDirection("Down") },
     { key = "k",          mods = "LEADER",      action = act.ActivatePaneDirection("Up") },
@@ -27,10 +27,10 @@ function M.setup(config)
     { key = "r",          mods = "LEADER",      action = act.ActivateKeyTable { name = "resize_pane", one_shot = false } },
 
     -- Tab keybindings
-    { key = "t",          mods = "LEADER",      action = act.SpawnTab("CurrentPaneDomain") },
-    { key = "[",          mods = "LEADER",      action = act.ActivateTabRelative(-1) },
-    { key = "]",          mods = "LEADER",      action = act.ActivateTabRelative(1) },
-    { key = "n",          mods = "LEADER",      action = act.ShowTabNavigator },
+    { key = "c",          mods = "LEADER",      action = act.SpawnTab("CurrentPaneDomain") },
+    { key = "p",          mods = "LEADER",      action = act.ActivateTabRelative(-1) },
+    { key = "n",          mods = "LEADER",      action = act.ActivateTabRelative(1) },
+    { key = "t",          mods = "LEADER",      action = act.ShowTabNavigator },
     {
       key = "e",
       mods = "LEADER",
