@@ -78,20 +78,11 @@ outer.right =      0
 
 # All possible commands: https://nikitabobko.github.io/AeroSpace/commands
 
-# See: https://nikitabobko.github.io/AeroSpace/commands#exec-and-forget
-# You can uncomment the following lines to open up terminal with alt + enter shortcut (like in i3)
-# alt-enter = '''exec-and-forget osascript -e '
-# tell application "Terminal"
-#     do script
-#     activate
-# end tell'
-# '''
-
 # See: https://nikitabobko.github.io/AeroSpace/commands#focus
-alt-h = 'focus left'
-alt-j = 'focus down'
-alt-k = 'focus up'
-alt-l = 'focus right'
+alt-h = 'focus --boundaries all-monitors-outer-frame left'
+alt-j = 'focus --boundaries all-monitors-outer-frame down'
+alt-k = 'focus --boundaries all-monitors-outer-frame up'
+alt-l = 'focus --boundaries all-monitors-outer-frame right'
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#move
 alt-shift-h = 'move left'
@@ -127,36 +118,50 @@ alt-shift-8 = 'move-node-to-workspace 8'
 alt-shift-9 = 'move-node-to-workspace 9'
 alt-shift-backtick = 'move-node-to-workspace S'
 
+cmd-shift-1 = 'move-node-to-workspace --focus-follows-window 1'
+cmd-shift-2 = 'move-node-to-workspace --focus-follows-window 2'
+cmd-shift-3 = 'move-node-to-workspace --focus-follows-window 3'
+cmd-shift-4 = 'move-node-to-workspace --focus-follows-window 4'
+cmd-shift-5 = 'move-node-to-workspace --focus-follows-window 5'
+cmd-shift-6 = 'move-node-to-workspace --focus-follows-window 6'
+cmd-shift-7 = 'move-node-to-workspace --focus-follows-window 7'
+cmd-shift-8 = 'move-node-to-workspace --focus-follows-window 8'
+cmd-shift-9 = 'move-node-to-workspace --focus-follows-window 9'
+cmd-shift-backtick = 'move-node-to-workspace --focus-follows-window S'
+
 # See: https://nikitabobko.github.io/AeroSpace/commands#workspace-back-and-forth
 alt-tab = 'workspace-back-and-forth'
 # See: https://nikitabobko.github.io/AeroSpace/commands#move-workspace-to-monitor
-alt-shift-tab = 'move-workspace-to-monitor --wrap-around next'
+alt-ctrl-tab = 'move-workspace-to-monitor --wrap-around next'
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#mode
-alt-shift-semicolon = 'mode service'
+alt-shift-s = 'mode service'
 
 # i3-like goodies
-alt-enter = 'exec-and-forget open -a /Applications/WezTerm.app'
+cmd-enter = 'exec-and-forget open -a /Applications/WezTerm.app'
 
 alt-f = 'fullscreen'
 
 alt-r = 'mode resize'
+alt-m = 'mode move'
 
-alt-shift-c = 'reload-config'
 alt-shift-r = 'reload-config'
 
-alt-s = 'layout v_accordion' # 'layout stacking' in i3
-alt-w = 'layout h_accordion' # 'layout tabbed' in i3
+#alt-s = 'layout v_accordion' # 'layout stacking' in i3
+#alt-w = 'layout h_accordion' # 'layout tabbed' in i3
 alt-e = 'layout tiles horizontal vertical' # 'layout toggle split' in i3
 
 alt-shift-space = 'layout floating tiling' # 'floating toggle' in i3
+cmd-shift-space = 'layout floating tiling' # 'floating toggle' in i3
 
-alt-o = 'workspace-back-and-forth'
 [mode.resize.binding]
 h = 'resize width -50'
 j = 'resize height +50'
 k = 'resize height -50'
 l = 'resize width +50'
+
+equal = 'balance-sizes'
+
 enter = 'mode main'
 esc = 'mode main'
 
@@ -176,12 +181,34 @@ alt-shift-j = ['join-with down', 'mode main']
 alt-shift-k = ['join-with up', 'mode main']
 alt-shift-l = ['join-with right', 'mode main']
 
-# 
+# Rapidly shift around stuff
 
+[mode.move.binding]
+1 = 'workspace 1'
+2 = 'workspace 2'
+3 = 'workspace 3'
+4 = 'workspace 4'
+5 = 'workspace 5'
+6 = 'workspace 6'
+7 = 'workspace 7'
+8 = 'workspace 8'
+9 = 'workspace 9'
+backtick = 'workspace S'
+
+h = 'move-workspace-to-monitor --wrap-around left'
+j = 'move-workspace-to-monitor --wrap-around down'
+k = 'move-workspace-to-monitor --wrap-around up'
+l = 'move-workspace-to-monitor --wrap-around right'
+
+enter = 'mode main'
+esc = 'mode main'
+
+# add move mode later!
+# idea is switch to workspace with 1 button and can workspaces easily
 
 [workspace-to-monitor-force-assignment]
 1 = 'main'
-S = 'secondary'
+# S = 'secondary'
 # App specific stuff
 [[on-window-detected]]
 if.app-id = 'com.mitchellh.ghostty'
