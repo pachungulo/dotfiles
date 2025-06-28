@@ -118,17 +118,6 @@ alt-shift-8 = 'move-node-to-workspace 8'
 alt-shift-9 = 'move-node-to-workspace 9'
 alt-shift-backtick = 'move-node-to-workspace S'
 
-cmd-shift-1 = 'move-node-to-workspace --focus-follows-window 1'
-cmd-shift-2 = 'move-node-to-workspace --focus-follows-window 2'
-cmd-shift-3 = 'move-node-to-workspace --focus-follows-window 3'
-cmd-shift-4 = 'move-node-to-workspace --focus-follows-window 4'
-cmd-shift-5 = 'move-node-to-workspace --focus-follows-window 5'
-cmd-shift-6 = 'move-node-to-workspace --focus-follows-window 6'
-cmd-shift-7 = 'move-node-to-workspace --focus-follows-window 7'
-cmd-shift-8 = 'move-node-to-workspace --focus-follows-window 8'
-cmd-shift-9 = 'move-node-to-workspace --focus-follows-window 9'
-cmd-shift-backtick = 'move-node-to-workspace --focus-follows-window S'
-
 # See: https://nikitabobko.github.io/AeroSpace/commands#workspace-back-and-forth
 alt-tab = 'workspace-back-and-forth'
 # See: https://nikitabobko.github.io/AeroSpace/commands#move-workspace-to-monitor
@@ -139,6 +128,7 @@ alt-shift-s = 'mode service'
 
 # i3-like goodies
 cmd-enter = 'exec-and-forget open -a /Applications/WezTerm.app'
+cmd-shift-enter = 'exec-and-forget open -a /Applications/Emacs.app'
 
 alt-f = 'fullscreen'
 
@@ -147,8 +137,8 @@ alt-m = 'mode move'
 
 alt-shift-r = 'reload-config'
 
-#alt-s = 'layout v_accordion' # 'layout stacking' in i3
-#alt-w = 'layout h_accordion' # 'layout tabbed' in i3
+alt-s = 'layout v_accordion' # 'layout stacking' in i3
+alt-w = 'layout h_accordion' # 'layout tabbed' in i3
 alt-e = 'layout tiles horizontal vertical' # 'layout toggle split' in i3
 
 alt-shift-space = 'layout floating tiling' # 'floating toggle' in i3
@@ -203,7 +193,6 @@ l = 'move-workspace-to-monitor --wrap-around right'
 enter = 'mode main'
 esc = 'mode main'
 
-# add move mode later!
 # idea is switch to workspace with 1 button and can workspaces easily
 
 [workspace-to-monitor-force-assignment]
