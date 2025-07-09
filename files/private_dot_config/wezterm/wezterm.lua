@@ -39,7 +39,7 @@ config.initial_cols = 125
 config.window_decorations = "RESIZE"
 config.hide_tab_bar_if_only_one_tab = true
 config.native_macos_fullscreen_mode = true
-config.cursor_blink_rate = 30
+config.cursor_blink_rate = 1000
 
 if wezterm.target_triple == "aarch64-apple-darwin" then
     config.default_prog = { "/opt/homebrew/bin/fish/", "-l" }
