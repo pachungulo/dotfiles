@@ -9,7 +9,7 @@ after-login-command = []
 # You can use it to add commands that run after AeroSpace startup.
 # 'after-startup-command' is run after 'after-login-command'
 # Available commands : https://nikitabobko.github.io/AeroSpace/commands
-after-startup-command = []
+after-startup-command = ['move-workspace-to-monitor --workspace 1 main']
 
 # Start AeroSpace at login
 start-at-login = true
@@ -195,9 +195,6 @@ esc = 'mode main'
 
 # idea is switch to workspace with 1 button and can workspaces easily
 
-[workspace-to-monitor-force-assignment]
-1 = 'main'
-# S = 'secondary'
 # App specific stuff
 [[on-window-detected]]
 if.app-id = 'com.mitchellh.ghostty'
