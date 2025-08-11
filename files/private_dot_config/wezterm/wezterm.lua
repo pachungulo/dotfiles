@@ -16,6 +16,8 @@ config.command_palette_fg_color = "#bac2de"
 config.window_background_opacity = 0.8
 config.macos_window_background_blur = 20
 config.kde_window_background_blur = true
+config.window_decorations = "RESIZE"
+config.enable_wayland = false
 
 config.window_background_gradient = {
     orientation = "Vertical",
