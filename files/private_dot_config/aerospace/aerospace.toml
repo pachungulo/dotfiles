@@ -128,7 +128,7 @@ alt-shift-s = 'mode service'
 
 # i3-like goodies
 cmd-enter = 'exec-and-forget open -a /Applications/WezTerm.app'
-cmd-shift-enter = 'exec-and-forget open -a /Applications/Emacs.app'
+cmd-shift-enter = ['exec-and-forget /opt/homebrew/bin/emacsclient -n -c', 'focus dfs-next']
 
 alt-f = 'fullscreen'
 
@@ -199,3 +199,4 @@ esc = 'mode main'
 [[on-window-detected]]
 if.app-id = 'com.mitchellh.ghostty'
 run = ['layout floating', 'move-node-to-workspace 2']
+
