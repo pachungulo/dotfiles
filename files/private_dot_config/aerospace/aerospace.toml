@@ -128,7 +128,7 @@ alt-shift-s = 'mode service'
 
 # i3-like goodies
 cmd-enter = 'exec-and-forget open -a /Applications/WezTerm.app'
-cmd-shift-enter = ['exec-and-forget /opt/homebrew/bin/emacsclient -n -c', 'focus dfs-next']
+cmd-shift-enter = 'exec-and-forget /opt/homebrew/bin/emacsclient -n -c'
 
 alt-f = 'fullscreen'
 
