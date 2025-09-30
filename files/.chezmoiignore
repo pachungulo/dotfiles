@@ -1,17 +1,15 @@
-{{  if not (lookPath "wezterm") -}}
-.config/wezterm/
-{{  end -}}
-{{  if not (lookPath "ghostty") -}}
-.config/ghostty/
-{{  end -}}
-{{  if not (lookPath "alacritty") -}}
-.config/alacritty/
-{{  end -}}
-
 # MacOS only packages
 
 {{ if ne .chezmoi.os "darwin" -}}
 {{ range .os_specific.darwin -}}
+{{ . }}
+{{ end -}}
+{{ end -}}
+
+# Linux only packages
+
+{{ if ne .chezmoi.os "linux" -}}
+{{ range .os_specific.linux -}}
 {{ . }}
 {{ end -}}
 {{ end -}}

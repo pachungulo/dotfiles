@@ -2,3 +2,7 @@ os_specific:
   darwin:
     - '.config/aerospace'
     - '.config/karabiner'
+
+  linux:
+    - '.config/niri'
+    - '.config/waybar'
