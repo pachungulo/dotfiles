@@ -11,12 +11,12 @@ end
 
 if not set -q __alreadyConfigured
 
+    set -U __alreadyConfigured
     fish_config theme save catppuccin
     set -l temp_fisher_path $HOME/.config/fish/fisher/functions/fisher.fish
     if not test -f $temp_fisher_path
         curl -sL https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fisher.fish | source && fisher update
     end
     fish_hybrid_key_bindings
-    set -U __alreadyConfigured
     set -e temp_fisher_path
 end
