@@ -1,0 +1,45 @@
+# Main colors
+color=0d0e1c
+key-hl-color=ff66ff
+ring-color=7030af
+text-color=7030af
+bs-hl-color=caa6df
+
+# Wrong
+text-wrong-color=ff5f59
+ring-wrong-color=ff5f59
+
+# Verifying
+ring-ver-color=2fafff
+text-ver-color=2fafff
+
+# Caps Lock (Apparenlty unused)
+text-caps-lock-color=7030af
+# caps-lock-key-hl-color=efef00
+# ring-caps-lock-color=7a6100
+# caps-lock-bs-hl-color=f5e0dc
+
+# Clear
+ring-clear-color=db7b5f
+text-clear-color=db7b5f
+
+
+# Inside (70% darkened of color)
+inside-clear-color=040408
+inside-ver-color=040408
+inside-wrong-color=040408
+inside-caps-lock-color=040408
+
+# Lines
+line-color=000000
+line-clear-color=000000
+line-caps-lock-color=000000
+line-ver-color=000000
+line-wrong-color=000000
+
+# Layout
+layout-bg-color=00000000
+layout-border-color=00000000
+layout-text-color=FFFFFF
+
+separator-color=00000000
