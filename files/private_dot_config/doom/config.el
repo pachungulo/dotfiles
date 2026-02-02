@@ -76,3 +76,5 @@
 ;; they are implemented.
 (setq shell-file-name (executable-find "bash"))
 (setq select-enable-clipboard nil)
+(if (eq system-type 'darwin)
+    (add-to-list 'default-frame-alist '(undecorated-round . t)))
