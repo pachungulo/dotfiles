@@ -5,11 +5,11 @@
             "complex_modifications": {
                 "rules": [
                     {
-                        "description": "Ctrl to Caps",
+                        "description": "ESC to Caps",
                         "manipulators": [
                             {
                                 "from": {
-                                    "key_code": "left_control",
+                                    "key_code": "escape",
                                     "modifiers": { "optional": ["any"] }
                                 },
                                 "to": [{ "key_code": "caps_lock" }],
