@@ -1,7 +1,7 @@
 config-version = 2
 
 after-startup-command = [
-'exec-and-forget borders active_color=0xff7aa2f7 inactive_color=0xff1a1b26 width=8',
+'exec-and-forget borders active_color=0xff7aa2f7 inactive_color=0xff1a1b26 width=10',
 'move-workspace-to-monitor --workspace 1 main'
 ]
 
@@ -80,7 +80,7 @@ alt-ctrl-9 = 'move-node-to-workspace 9'
 alt-ctrl-0 = 'move-node-to-workspace 10'
 alt-ctrl-backtick = 'move-node-to-workspace S'
 
-alt-tab = 'focus-back-and-forth'
+alt-tab = 'workspace-back-and-forth'
 
 alt-shift-h = 'focus-monitor left'
 alt-shift-j = 'focus-monitor down'
@@ -103,7 +103,8 @@ cmd-shift-enter = 'exec-and-forget /opt/homebrew/bin/emacsclient -n -c'
 alt-f = 'fullscreen'
 
 alt-r = 'mode resize'
-alt-m = 'mode move'
+alt-m = 'move-workspace-to-monitor --workspace S secondary'
+alt-shift-m = 'mode move'
 
 alt-shift-r = 'reload-config'
 
